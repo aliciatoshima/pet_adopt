@@ -1,4 +1,4 @@
-// Business Logic for PigDice ---------
+// Business Logic  ---------
 
 function Order() {
   this.Pizza = []
