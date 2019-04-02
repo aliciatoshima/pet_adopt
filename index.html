@@ -7,24 +7,58 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js "integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
     <link href="css/styles.css" rel="stylesheet">
-    <title>Pizza</title>
+    <title>Pet Adoption</title>
   </head>
   <body>
     <div class="container">
 
     <div class="jumbotron">
-      <h1>Welcome to Not Domino's</h1>
-      <h3>Build your own pizza!</h3>
+      <h1>Adopt a Pet</h1>
+      <h3>We've customized the adoption process. </h3>
     </div>
 
 
 
       <div class="container">
-        <div class="row">
 
-      <div class="col-md-8">
         <form id="pizza-order">
-          <p>Pizza Size:</p>
+          <p>What kind of pet do you want?</p>
+          <div class="radio">
+            <label>
+              <input type="radio" name="animal" value="small" checked>
+              Dog
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="animal" value="medium">
+              Cat
+            </label>
+          </div>
+          <br>
+
+          <p>Do you have a gender in mind?</p>
+          <div class="radio">
+            <label>
+              <input type="radio" name="gender" value="small" checked>
+              Boy
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="gender" value="medium">
+              Girl
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="gender" value="medium">
+              Surprise Me
+            </label>
+          </div>
+          <br>
+
+          <p>Ideal Size of Your Pet:</p>
           <div class="radio">
             <label>
               <input type="radio" name="size" value="small" checked>
@@ -39,45 +73,58 @@
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="size" value="large">
+              <input type="radio" name="size" value="medium">
               Large
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="size" value="xlarge">
+              <input type="radio" name="size" value="medium">
               Extra Large
             </label>
-          </div><br>
+          </div>
+          <br>
 
 
           <div class="form-group">
-            <p>Pizza Toppings:</p>
+            <p>Qualities you want in a pet:</p>
 
             <div class="row">
-            <div class="col-md-4">
-              <input type="checkbox" name="pizza-toppping" value="Pepperoni"> Pepperoni<br>
-              <input type="checkbox" name="pizza-toppping" value="Sausage"> Sausage<br>
-              <input type="checkbox" name="pizza-toppping" value="Canadian Bacon"> Canadian Bacon<br>
-              <input type="checkbox" name="pizza-toppping" value="Bacon"> Bacon<br>
-              <input type="checkbox" name="pizza-toppping" value=" Onions"> Onions<br>
+            <div class="col-md-6">
+              <input type="checkbox" name="pizza-toppping" value="Pepperoni"> Active<br>
+              <input type="checkbox" name="pizza-toppping" value="Sausage"> Calm<br>
+              <input type="checkbox" name="pizza-toppping" value="Canadian Bacon"> Don't mind a talkive boi (or girl).<br>
+              <input type="checkbox" name="pizza-toppping" value="Bacon"> Good with children.<br>
+              <input type="checkbox" name="pizza-toppping" value=" Onions"> Gets along with other cats.<br>
             </div>
 
-            <div class="col-md-4">
-              <input type="checkbox" name="pizza-toppping" value="Mushrooms"> Mushrooms<br>
-              <input type="checkbox" name="pizza-toppping" value="Green Peppers"> Green Peppers<br>
-              <input type="checkbox" name="pizza-toppping" value="Pineapples"> Pineapples<br>
-              <input type="checkbox" name="pizza-toppping" value="Feta Cheeser"> Feta Cheese<br>
-              <input type="checkbox" name="pizza-toppping" value="More Cheese"> More Cheese<br>
+            <div class="col-md-6">
+              <input type="checkbox" name="pizza-toppping" value="Mushrooms"> Gets alongs with other dogs.<br>
+              <input type="checkbox" name="pizza-toppping" value="Green Peppers"> Sheds very little. <br>
+              <input type="checkbox" name="pizza-toppping" value="Pineapples"> Shyness isn't a bad thing.<br>
+              <input type="checkbox" name="pizza-toppping" value="Feta Cheeser"> Quiet pet.<br>
+              <input type="checkbox" name="pizza-toppping" value="More Cheese"> Shedding isn't a bad thing.<br>
             </div>
           </div>
 
           </div>
+
+          <div class="form-group">
+            <p>Things you would like to do with your pet:</p>
+
+              <input type="checkbox" name="pizza-toppping" value="Pepperoni"> Go for a run<br>
+              <input type="checkbox" name="pizza-toppping" value="Sausage"> Hike<br>
+              <input type="checkbox" name="pizza-toppping" value="Canadian Bacon"> Cuddle<br>
+              <input type="checkbox" name="pizza-toppping" value="Bacon"> Got for a walk<br>
+              <input type="checkbox" name="pizza-toppping" value=" Onions"> Swim<br>
+          </div>
+
          <button type="submit" class="btn btn-danger">Add to Cart</button>
         </form>
-      </div>
+        <br>
 
-          <div class="col-md-4">
+
+          <div class="col-md-6">
             <div class="order-total">
               <h3>Review Your Order Below:</h3>
               <p>Number of Pizzas: <span class="pizza-quantity"></span></p>
@@ -96,7 +143,7 @@
             </div>
         </div>
 
-      </div>
+
 
 
         <!-- <div class="reset">

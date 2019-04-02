@@ -6,7 +6,7 @@
 
 ## Description
 
-This project uses an HTML form and asks users to order a pizza (or two); the output is the number of pizzas ordered and the total order cost.  https://aliciatoshima.github.io/pizza/. Link to the GitHub repository can be found here: https://github.com/aliciatoshima/pizza. This project is an exercise in using HTML (and showcasing all of the elements learned), CSS, Bootstrap, JavaScript and jquery, branching, for and forEach loops, and creatings objects, contructors, and prototytpes.
+This project uses an HTML form and asks users to order a pizza (or two); the output is the number of pizzas ordered and the total order cost.  https://aliciatoshima.github.io/pizza/. Link to the GitHub repository can be found here: https://github.com/aliciatoshima/pizza. This project is an exercise in using HTML (and showcasing all of the elements learned), CSS, Bootstrap, JavaScript and jQuery, branching, for and forEach loops, and creating objects, constructors, and prototypes.
 
 ## Specifications
 * Program will enter a pizza object into the order object every time the submit button is pushed. It will update and show the number of pizzas that has been ordered and the total cost of the entire order.
