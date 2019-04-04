@@ -89,59 +89,84 @@
           <div class="form-group">
             <p>Qualities you want in a pet:</p>
 
-            <div class="row">
-            <div class="col-md-6">
-              <input type="checkbox" name="pizza-toppping" value="Pepperoni"> Active<br>
-              <input type="checkbox" name="pizza-toppping" value="Sausage"> Calm<br>
-              <input type="checkbox" name="pizza-toppping" value="Canadian Bacon"> Don't mind a talkive boi (or girl).<br>
-              <input type="checkbox" name="pizza-toppping" value="Bacon"> Good with children.<br>
-              <input type="checkbox" name="pizza-toppping" value=" Onions"> Gets along with other cats.<br>
+            <p>How active do you want your pet to be?</p>
+            <label for="active">
+              <input type="radio" name="first_item" value="1" />
+              Lazy boi (or girl)
+              <input type="radio" id="one" name="first_item" value="2" />
+              Doesn't matter
+              <input type="radio" id="one" name="first_item" value="3" />
+              Active
+            </label>
+            <br>
+
+            <p>How talkative do you want your pet to be?</p>
+            <label for="active">
+              <input type="radio" name="first_item" value="1" />
+              Pretty quiet
+              <input type="radio" id="one" name="first_item" value="2" />
+              Doesn't matter
+              <input type="radio" id="one" name="first_item" value="3" />
+              I don't mind a talkative boi (or girl)
+            </label>
+            <br>
+          </div>
+
+            <p>How friendly do you want your pet to be?</p>
+            <div class="form-group">
+                <input type="checkbox" name="friendliness" value="run"> Good with cats.<br>
+                <input type="checkbox" name="friendliness" value="hike"> Good with dogs.<br>
+                <input type="checkbox" name="friendliness" value="cuddle"> Good with children.<br>
+                <input type="checkbox" name="friendliness" value="walk"> They will be the only one in my life so it won't matter<br>
+                <input type="checkbox" name="friendliness" value="swim"> Good with babies.<br>
             </div>
 
+            <!-- <div class="row">
             <div class="col-md-6">
-              <input type="checkbox" name="pizza-toppping" value="Mushrooms"> Gets alongs with other dogs.<br>
-              <input type="checkbox" name="pizza-toppping" value="Green Peppers"> Sheds very little. <br>
-              <input type="checkbox" name="pizza-toppping" value="Pineapples"> Shyness isn't a bad thing.<br>
-              <input type="checkbox" name="pizza-toppping" value="Feta Cheeser"> Quiet pet.<br>
-              <input type="checkbox" name="pizza-toppping" value="More Cheese"> Shedding isn't a bad thing.<br>
+              <input type="checkbox" name="pizza-toppping" value="active"> Active<br>
+              <input type="checkbox" name="pizza-toppping" value="calm"> Calm<br>
+              <input type="checkbox" name="pizza-toppping" value="loud"> Don't mind a talkive boi (or girl).<br>
+              <input type="checkbox" name="pizza-toppping" value="child-friendly"> Good with children.<br>
+              <input type="checkbox" name="pizza-toppping" value="cats"> Gets along with other cats.<br>
+            </div> -->
+
+            <!-- <div class="col-md-6">
+              <input type="checkbox" name="pizza-toppping" value="dogs"> Gets alongs with other dogs.<br>
+              <input type="checkbox" name="pizza-toppping" value="no-shed"> Sheds very little. <br>
+              <input type="checkbox" name="pizza-toppping" value="shy"> Shyness isn't a bad thing.<br>
+              <input type="checkbox" name="pizza-toppping" value="quiet"> Quiet pet.<br>
+              <input type="checkbox" name="pizza-toppping" value="yes-shed"> Shedding isn't a bad thing.<br>
             </div>
-          </div>
+          </div> -->
 
           </div>
 
           <div class="form-group">
-            <p>Things you would like to do with your pet:</p>
+            <p>Activities you would like to do with your pet:</p>
 
-              <input type="checkbox" name="pizza-toppping" value="Pepperoni"> Go for a run<br>
-              <input type="checkbox" name="pizza-toppping" value="Sausage"> Hike<br>
-              <input type="checkbox" name="pizza-toppping" value="Canadian Bacon"> Cuddle<br>
-              <input type="checkbox" name="pizza-toppping" value="Bacon"> Got for a walk<br>
-              <input type="checkbox" name="pizza-toppping" value=" Onions"> Swim<br>
+              <input type="checkbox" name="pizza-toppping" value="run"> Go for a run<br>
+              <input type="checkbox" name="pizza-toppping" value="hike"> Hike<br>
+              <input type="checkbox" name="pizza-toppping" value="cuddle"> Cuddle<br>
+              <input type="checkbox" name="pizza-toppping" value="walk"> Got for a walk<br>
+              <input type="checkbox" name="pizza-toppping" value="swim"> Swim<br>
           </div>
 
-         <button type="submit" class="btn btn-danger">Add to Cart</button>
+         <button type="submit" class="btn btn-danger">Adopt Me!</button>
         </form>
         <br>
 
+            <div class="img">
 
-          <div class="col-md-6">
-            <div class="order-total">
-              <h3>Review Your Order Below:</h3>
-              <p>Number of Pizzas: <span class="pizza-quantity"></span></p>
-              <p>Total Order Cost: <span class="total"></span></p>
-              <p>Click on the pizza you ordered below to see order specific details.</p>
-              <ul class="pizzas">
 
-              </ul>
             </div>
 
-            <div id="order">
-              <h3>Review Your Pizza Below:</h3>
-              <p>Pizza Size: <span class="pizza-size"></span></p>
-              <p>Toppings: <span class="pizza-toppings"></span></p>
-              <p>Order Total: <span class="pizza-price"></span></p>
+            <div class="pet-result">
+              <h3>Congratulations! You matched with <span class="pet-match"></span></h3>
+              <p>Gender: <span class="gender"></span></p>
+              <p>Lbs: <span class="size"></span></p>
+              <p>Hobbies: <span class="hobbies"></span></p>
             </div>
-        </div>
+
 
 
 
